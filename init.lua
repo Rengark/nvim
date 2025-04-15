@@ -1,6 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
+require("config.options")
 -- monokai setup
 -- setup must be called before loading the colorscheme
 -- Default options:
@@ -29,3 +29,11 @@ require("monokai").setup({
 vim.cmd("colorscheme monokai")
 vim.o.background = "dark"
 vim.cmd([[colorscheme monokai]])
+
+require('nvim-treesitter.configs').setup {
+  -- ... other configurations ...
+  install = {
+    -- ... other install configurations ...
+    compilers = { "zig", "cl", "gcc", "clang" }, -- Your preferred order of compilers
+  },
+}
