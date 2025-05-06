@@ -1,5 +1,5 @@
 return {
-  { "nxstynate/monokai.nvim", priority = 1000 },
+  { "Rengark/monokai.nvim", priority = 1000 },
 
   {
     "LazyVim/LazyVim",
